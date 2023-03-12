@@ -25,7 +25,7 @@ import time
  is illustrated by the contents of this file.
 
 
-# ====================================================================================================================
+
 # Task 01
 
  We are given a list of strings. We have to divide each  string
@@ -51,16 +51,16 @@ bcdglmno
 efkprs
 '''
 
-# ====================================================================================================================
+
 # Task 02
 
-# In the given string, find the number of substrings
-# which contain exactly one symbol 0 and exactly one symbol 1.
-# In this problem, we count each occurrence of a substring separately.
-# That is, when two identical substrings occur at different
-# positions in the original string, each of these substrings is counted separately.
-# The input list of strings contains at most 5 strings, the length of each is at most 5000 characters.
-# Print the result for each string on a separate line.
+ In the given string, find the number of substrings
+ which contain exactly one symbol 0 and exactly one symbol 1.
+ In this problem, we count each occurrence of a substring separately.
+ That is, when two identical substrings occur at different
+ positions in the original string, each of these substrings is counted separately.
+ The input list of strings contains at most 5 strings, the length of each is at most 5000 characters.
+ Print the result for each string on a separate line.
 
 '''
 Example
@@ -77,35 +77,35 @@ n0v10se11g1c01
 The substrings in the first string are are  n0v1 ,0v1, v10, v10s, v10se, 10, 10s, 10se, 0se1, g1c0, 1c0, c01, 01.
 '''
 
-# ====================================================================================================================
+
 # Task 03
 
-# A substring S1 of string S is a constant substring when
-# all four following conditions are met:
-#   (1)   len(S1) > 1,
-#   (2)   all characters in S1 are the same,
-#   (3)   the character immediately before S1 is
-#               either non-existing (S1 is at the beginning of S)
-#               or it differs from characters in S1,
-#   (4)   the character immediately after S1 is
-#               either non-existing (S1 is at the end of S)
-#               or it differs from characters in S1,
-# The task is to identify all constant substrings in a given string
-# and then to remove them all from the given string.
-# Note that two constant substrings cannot overlap one another in the string.
-# After removal of all constant substrings from a given string,
-# the reduced string may contain new constant substrings.
-# Example:
-#     S = abcxxcbdyyyzzzzfgzzgf
-#     The constant substrings are: xx, yyy, zzzz, zz.
-#     After removal of constant substrings:
-#     S = abccbdfggf
-#     Now S contains other constant substrings: cc, gg
-#
-# In your solution, proceed in repeated steps. In each step, remove from S all constant substrings
-# which are in S at the beginning of the step.
-# Stop when S contains no constant substring and print S.
-# The length of the given input string S is at most 5000, there are at most 5 strings in the input.
+ A substring S1 of string S is a constant substring when
+ all four following conditions are met:
+   (1)   len(S1) > 1,
+   (2)   all characters in S1 are the same,
+   (3)   the character immediately before S1 is
+               either non-existing (S1 is at the beginning of S)
+               or it differs from characters in S1,
+   (4)   the character immediately after S1 is
+               either non-existing (S1 is at the end of S)
+               or it differs from characters in S1,
+ The task is to identify all constant substrings in a given string
+ and then to remove them all from the given string.
+ Note that two constant substrings cannot overlap one another in the string.
+ After removal of all constant substrings from a given string,
+ the reduced string may contain new constant substrings.
+ Example:
+     S = abcxxcbdyyyzzzzfgzzgf
+     The constant substrings are: xx, yyy, zzzz, zz.
+     After removal of constant substrings:
+     S = abccbdfggf
+     Now S contains other constant substrings: cc, gg
+
+ In your solution, proceed in repeated steps. In each step, remove from S all constant substrings
+ which are in S at the beginning of the step.
+ Stop when S contains no constant substring and print S.
+ The length of the given input string S is at most 5000, there are at most 5 strings in the input.
 
 '''
 Example
@@ -121,18 +121,18 @@ None
 tlmoyajvwenryvlo
 '''
 
-# ====================================================================================================================
+
 # Task 04
 
-# In the given input string, find the longest substring which contains exactly one word 'May'.
-# If more substrings share the same maximum length print them all,
-# in the order in which they appear in the original string, from left to right.
-# Each output string occupies exactly one text line.
-# if the word May is not present in the entire string, output string None on one line.
-# Print a row of four asterisks, and no other symbols,
-# after the entire output for each input string.
-# (It helps to separate visually the outputs corresponding to different input strings.)
-# The length of the given input string  is at most 5000, there are at most 5 strings in the input.
+ In the given input string, find the longest substring which contains exactly one word 'May'.
+ If more substrings share the same maximum length print them all,
+ in the order in which they appear in the original string, from left to right.
+ Each output string occupies exactly one text line.
+ if the word May is not present in the entire string, output string None on one line.
+ Print a row of four asterisks, and no other symbols,
+ after the entire output for each input string.
+ (It helps to separate visually the outputs corresponding to different input strings.)
+ The length of the given input string  is at most 5000, there are at most 5 strings in the input.
 
 '''
 Example
@@ -154,24 +154,24 @@ ayuuMaywwMa
 ****
 '''
 
-# ====================================================================================================================
+
 # Task 05
 
-# In the given input string,  find the longest substring
-# which contains exactly one word 'May', and it does not
-# contain any other month name.
-# If more substrings share the same maximum length print them all,
-# in the order in which they appear in the original string, from left to right.
-# Each output string occupies exactly one text line.
-# if the word May is not present in the entire string, output string None on one line.
-# Print a row of four asterisks, and no other symbols,
-# after the entire output for each input string.
-# (It helps to separate visually the outputs corresponding to different input strings.)
-# The names of the months are:
-#  January, February, March, April, May, June, July, August, September, October, November, December
-# They are considered only in this format, with the capital first  letter.
-# Other formats like e.g. JUne, jUNE, ApRiL, august, are not considered to be names of the months.
-# The length of the given input string  is at most 5000, there are at most 5 strings in the input.
+ In the given input string,  find the longest substring
+ which contains exactly one word 'May', and it does not
+ contain any other month name.
+ If more substrings share the same maximum length print them all,
+ in the order in which they appear in the original string, from left to right.
+ Each output string occupies exactly one text line.
+ if the word May is not present in the entire string, output string None on one line.
+ Print a row of four asterisks, and no other symbols,
+ after the entire output for each input string.
+ (It helps to separate visually the outputs corresponding to different input strings.)
+ The names of the months are:
+  January, February, March, April, May, June, July, August, September, October, November, December
+ They are considered only in this format, with the capital first  letter.
+ Other formats like e.g. JUne, jUNE, ApRiL, august, are not considered to be names of the months.
+ The length of the given input string  is at most 5000, there are at most 5 strings in the input.
 
 '''
 Example
@@ -211,7 +211,7 @@ if taskNo == 3:  task03( strings )
 if taskNo == 4:  task04( strings )
 if taskNo == 5:  task05( strings )
 t2 = time.time()
-# print( 'time', str(t2-t1)[:5] )
+print( 'time', str(t2-t1)[:5] )
 
 Public data
 The public data set is intended for easier debugging and approximate program correctness checking. The public data set is stored also in the upload system and each time a student submits a solution it is run on the public dataset and the program output to stdout and stderr is available to him/her.

@@ -193,7 +193,7 @@ def task05(ss):
     pass
 
 
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 #               I N P U T    R E A D I N G
 taskNo = int( input() )
 Nstrings = int( input() )
@@ -201,7 +201,7 @@ strings = []
 for k in range( Nstrings ):
     strings.append(input())
 
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 #             P R O C E S S I N G
 
 t1 = time.time()

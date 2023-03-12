@@ -1,10 +1,6 @@
-PGE Practices 03
+# PGE Practices 03
 
-import time
-
-# Practices 03
-
- Common input format
+# Common input format
  -------------------
  (Read the tasks descriptions below before reading this paragraph.)
  All tasks in practices 03 set share common data input format:
@@ -15,7 +11,7 @@ import time
  The input of the whole program always contain exactly one data set of one task.
  In the evaluation system, the code is run repeatedly, each time with different input.
 
- Solution code structure
+# Solution code structure
  -----------------------
  The code reads the input data, including the number of the task.
  Next, it runs a function or a block of code which accepts the input data

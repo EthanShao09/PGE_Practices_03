@@ -4,40 +4,40 @@ import time
 
 # Practices 03
 
-# Common input format
-# -------------------
-# (Read the tasks descriptions below before reading this paragraph.)
-# All tasks in practices 03 set share common data input format:
-# The first line contains the number of the task (1 - 5).
-# The second line contains the number N of strings in the input.
-# Next, there are N lines of input, each contains one input string.
-# Each string consists only of alphanumerical symbols, and it does not contain any blank space(s).
-# The input of the whole program always contain exactly one data set of one task.
-# In the evaluation system, the code is run repeatedly, each time with different input.
+ Common input format
+ -------------------
+ (Read the tasks descriptions below before reading this paragraph.)
+ All tasks in practices 03 set share common data input format:
+ The first line contains the number of the task (1 - 5).
+ The second line contains the number N of strings in the input.
+ Next, there are N lines of input, each contains one input string.
+ Each string consists only of alphanumerical symbols, and it does not contain any blank space(s).
+ The input of the whole program always contain exactly one data set of one task.
+ In the evaluation system, the code is run repeatedly, each time with different input.
 
-# Solution code structure
-# -----------------------
-# The code reads the input data, including the number of the task.
-# Next, it runs a function or a block of code which accepts the input data
-# and computes and prints the solution to it.
-# It is recommended to wrap the solution of each task in a separate function,
-# an example (not obligatory!) structure of the code
-# is illustrated by the contents of this file.
+ Solution code structure
+ -----------------------
+ The code reads the input data, including the number of the task.
+ Next, it runs a function or a block of code which accepts the input data
+ and computes and prints the solution to it.
+ It is recommended to wrap the solution of each task in a separate function,
+ an example (not obligatory!) structure of the code
+ is illustrated by the contents of this file.
 
 
 # ====================================================================================================================
 # Task 01
-#
-# We are given a list of strings. We have to divide each  string
-# in half and create two new strings, A and B. String A will contain all
-# first halves of the strings in the list and string B will contain
-# all second halves of the strings in the list.
-# The order of the halves in the resulting string will correspond to the
-# order of their respective strings in the input list.
-# When the length of a string is odd, its first half ends
-# immediately after the middle character of the string, and also there the second half begins.
-# The total of lengths of all strings in the list is less than 10^5.
-# Print A and B on separate lines
+
+ We are given a list of strings. We have to divide each  string
+ in half and create two new strings, A and B. String A will contain all
+ first halves of the strings in the list and string B will contain
+ all second halves of the strings in the list.
+ The order of the halves in the resulting string will correspond to the
+ order of their respective strings in the input list.
+ When the length of a string is odd, its first half ends
+ immediately after the middle character of the string, and also there the second half begins.
+ The total of lengths of all strings in the list is less than 10^5.
+ Print A and B on separate lines
 '''
 Example
   Input

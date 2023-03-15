@@ -38,18 +38,23 @@ def task02(strings):
 
 def task03(strings):
     for elements in strings:
-        List = list(elements)
-        for i in range(1, len(elements)):
-            if List[i] != List[i-1]:
-                continue
-            elif List[i] == List[i-1]:
-                for j in range(i-1, len(List)):
-                    if List[j] != List[i]:
-                        for elements in List[i:j]:
-                            elements = "."
+        flag=0
+        new=""
+        K = 0
 
+        for i in range(len(elements)-1):
+            if elements[i]==elements[i+1]:
+                flag=1
 
-        print(List)
+            else:
+                if flag == 0:
+                    new += elements[i:i+1]
+                else:
+                    flag=0
+        if elements[-1] != elements[-2]:
+            new+=elements[-1]
+
+        print(new)
 
 
 
